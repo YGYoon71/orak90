@@ -1,4 +1,6 @@
-# Pixel Arcade
+# orak90
+
+Pixel Arcade — 브라우저 오락실
 
 브라우저에서 개인 보유 아케이드 게임 파일을 실행하는 정적 웹사이트입니다.
 
@@ -22,4 +24,4 @@ GitHub Pages 또는 로컬 웹 서버로 `index.html`을 제공하세요. `file:
 2. 저장소의 **Settings → Pages → Build and deployment → Source**에서 **GitHub Actions**를 선택하세요.
 3. **Actions** 탭에서 `Deploy site to GitHub Pages` 실행이 완료되면 공개된 Pages 주소를 확인하세요.
 
-이 저장소는 현재 GitHub 원격 저장소와 연결되어 있지 않습니다. 공개 저장소에 게임 파일은 올리지 마세요.
+공개 저장소에 게임 ROM 파일은 올리지 마세요.
