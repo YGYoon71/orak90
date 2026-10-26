@@ -47,7 +47,7 @@ romInput.addEventListener('change', () => {
   }, 25000);
 
   const script = document.createElement('script');
-  script.src = 'https://cdn.emulatorjs.org/stable/loader.js';
+  script.src = `${window.EJS_pathtodata}loader.js`;
   script.dataset.emulatorjs = 'true';
   script.onerror = () => {
     clearTimeout(loadTimer);
