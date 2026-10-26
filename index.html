@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="내가 보유한 아케이드 게임 파일을 브라우저에서 실행하는 오락실 플레이어">
+  <title>PIXEL ARCADE — 브라우저 오락실</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Pixel Arcade 홈"><span class="brand-mark">P<span>✦</span></span><span>PIXEL<span class="brand-light">ARCADE</span></span></a>
+    <div class="top-label"><span class="live-dot"></span> YOUR PERSONAL ARCADE</div>
+    <a class="top-link" href="#how-to">이용 방법 <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>INSERT COIN</span><i></i> 1990 — FOREVER</div>
+        <h1>그때 그 오락실,<br><em>다시 플레이.</em></h1>
+        <p>가지고 있는 아케이드 게임 파일을 불러와<br class="desktop-only"> 브라우저에서 바로 즐겨보세요.</p>
+        <a class="hero-cta" href="#player"><span class="play-icon">▶</span> 게임 시작하기 <span class="cta-arrow">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sunburst"></div><div class="pixel-star star-one">✦</div><div class="pixel-star star-two">✳</div>
+        <div class="cabinet">
+          <div class="cabinet-top"><span>PIXEL<br>ARCADE</span><b>★ 1UP ★</b></div>
+          <div class="cabinet-screen"><div class="screen-scan"></div><div class="screen-title">GAME<br><span>ON!</span></div><div class="screen-sprite">👾</div></div>
+          <div class="cabinet-controls"><span class="joystick"><i></i></span><span class="cab-button red"></span><span class="cab-button yellow"></span><span class="cab-button blue"></span></div>
+          <div class="cabinet-base"><span>● ● ● ● ●</span></div>
+        </div>
+        <div class="coin coin-a">₩</div><div class="coin coin-b">★</div>
+        <div class="art-caption">NO QUARTERS NEEDED <span>✦</span></div>
+      </div>
+      <div class="hero-index">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="player-section" id="player">
+      <div class="section-heading"><div><div class="eyebrow">THE ARCADE</div><h2>플레이어</h2></div><span class="section-note"><i class="live-dot"></i> READY WHEN YOU ARE</span></div>
+      <div class="player-card">
+        <div class="player-toolbar"><div class="window-dots"><i></i><i></i><i></i></div><span class="toolbar-title">PIXEL ARCADE <b>/</b> PLAYER</span><span class="toolbar-status" id="status-label">STANDBY</span></div>
+        <div class="game-stage" id="game-stage">
+          <div class="stage-grid"></div>
+          <div class="stage-welcome" id="stage-welcome">
+            <div class="welcome-badge">PLAYER 1</div>
+            <div class="welcome-joystick">✣</div>
+            <h3>코인을 넣고<br><span>시작하세요</span></h3>
+            <p>아래 버튼을 눌러 게임 파일을 선택하세요</p>
+          </div>
+          <div id="game"></div>
+          <div class="stage-loader" id="stage-loader" hidden><div class="loader-pixel"></div><span>게임을 준비하고 있어요…</span></div>
+        </div>
+        <div class="player-footer">
+          <div class="selected-game"><span class="game-chip">MAME</span><span id="file-name">게임 파일을 선택해 주세요</span></div>
+          <div class="player-actions">
+            <label class="upload-button" for="rom-file"><span>＋</span> 게임 파일 선택</label>
+            <input id="rom-file" type="file" accept=".zip,.7z,.rar,.bin,.rom" hidden>
+            <button class="fullscreen-button" id="fullscreen-button" type="button" title="전체 화면" aria-label="전체 화면">⛶</button>
+          </div>
+        </div>
+      </div>
+      <p class="player-hint"><span>ⓘ</span> MAME 호환 게임 파일을 직접 선택해 주세요. 파일은 이 브라우저 안에서만 사용됩니다.</p>
+    </section>
+
+    <section class="guide" id="how-to">
+      <div class="section-heading"><div><div class="eyebrow">QUICK START</div><h2>3초면 충분해요</h2></div><span class="guide-aside">추억을 불러오는 방법 <b>→</b></span></div>
+      <div class="steps">
+        <article class="step"><div class="step-top"><span>01</span><span class="step-icon">▣</span></div><h3>게임 파일 준비</h3><p>직접 보유한 MAME 호환 게임 파일을 준비해 주세요. 보통 ZIP 형식으로 제공됩니다.</p></article>
+        <article class="step"><div class="step-top"><span>02</span><span class="step-icon">⇧</span></div><h3>파일 불러오기</h3><p>플레이어의 <b>게임 파일 선택</b> 버튼을 눌러 파일을 불러오세요.</p></article>
+        <article class="step"><div class="step-top"><span>03</span><span class="step-icon">▶</span></div><h3>추억 플레이</h3><p>게임이 준비되면 화면을 클릭해 시작하세요. 전체 화면으로도 즐길 수 있어요.</p></article>
+      </div>
+      <div class="controls-strip"><span class="controls-label">KEYBOARD CONTROLS</span><span><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd> 이동</span><span><kbd>Z</kbd><kbd>X</kbd> 버튼</span><span><kbd>ENTER</kbd> 시작</span><span class="controls-note">게임에 따라 조작키가 다를 수 있어요.</span></div>
+    </section>
+    <section class="note"><span class="note-icon">✳</span><p><b>게임 파일 안내</b><br>이 사이트는 에뮬레이터만 제공하며 게임 파일은 포함하지 않습니다. 직접 보유하고 합법적으로 사용할 수 있는 파일만 이용해 주세요.</p></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">P<span>✦</span></span><span>PIXEL<span class="brand-light">ARCADE</span></span></a><span>MADE FOR THE LOVE OF ARCADE <b>✦</b> 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="app.js"></script>
+</body>
+</html>
